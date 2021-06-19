@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import  { loaditems } from './../store/items';
+import { loaditems } from '../../store/items';
+
+
 
 class ClothesItems extends Component {
 
@@ -9,11 +11,12 @@ class ClothesItems extends Component {
   }
 
   render() {
+   
     return (
       <div className="cards">
         {this.props.items.map((item) => (
           <div key={item.id} className="card">
-            {item.description}
+            {item.description}           
           </div>
         ))}
       </div>

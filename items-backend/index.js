@@ -6,11 +6,12 @@ const cors = require("cors");
 app.use(cors());
 app.use(bodyParser.json());
 
+
 const items = [
-  { id: 1, description: "item 1", userId: 1, resolved: true },
+  { id: 1, description: "item 1", userId: 1, resolved: true, image: "./images/ProductA.png"},
   { id: 2, description: "item 2", userId: 1 },
   { id: 3, description: "item 3", userId: 2 },
-  { id: 4, description: "item 4" }
+  { id: 4, description: "item 4" },
 ];
 
 app.get("/api/items", (req, res) => {

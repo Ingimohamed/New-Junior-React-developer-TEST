@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+$lightGreen: #5ECE7B;
+$overlayColor:  #39374838;
+$blackColorText: #1D1F22;
+
+#navbar{
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+    .ul_navbar{
+        display: flex;
+        justify-content: space-around;
+        width: 16%;
+        height: 46px;
+        li{
+            list-style: none;
+            line-height: 42px;
+        }
+        li:hover{
+            border-bottom: 2px solid $lightGreen;
+            line-height: 42px;
+        }
+      a.active > li{
+            border-bottom: 2px solid $lightGreen;
+        }
+
+        a{
+            color: $blackColorText;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 19.2px;
+        }
+        a:hover{
+            color:$lightGreen;
+        }
+        
+    }
+    .ul_navbar2{
+        display: flex;
+        justify-content: space-around;
+        width: 6%;
+        li{
+            list-style: none;
+        }
+       .dollar_sign{
+           font-weight: 500;
+           font-size: 18px;
+       }
+       .price_cart{
+           cursor: pointer;
+       }
+    }
+    .div_middle_icon{
+        width:16%;
+    }
+}
+
+
+

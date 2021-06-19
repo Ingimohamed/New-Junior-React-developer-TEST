@@ -1,7 +1,7 @@
-import './App.scss';
-import Navbar from './components/Navbar';
-import configureStore from './store/configureStore';
-import ClothesItems from './components/ClothesItems';
+import '../styles/App.scss';
+import Navbar from './navbar/Navbar';
+import configureStore from '../store/configureStore';
+import ClothesItems from './items/ClothesItems';
 import { Provider } from 'react-redux';
 
 const store = configureStore();
