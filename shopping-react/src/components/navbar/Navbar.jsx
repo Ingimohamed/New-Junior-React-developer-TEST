@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
-import { NavLink as Link } from 'react-router-dom';
 import navIcon from '../../images/navIcon.png';
 import vector from '../../images/Vector.png';
 import cartIcon from '../../images/cartIcon.png';
+import { Link, withRouter } from 'react-router-dom';
 
 class Navbar extends Component {
    
-
-   
-    
     render() {
         return (
           <div id="navbar">
             <nav>
               <ul className="ul_navbar">
                 <li>
-                  <a className="active" href="#">WOMEN</a>
+                  <Link to="/women" className="link">Women</Link>
                 </li>
                 <li>
-                  <a href="#">MEN</a>
+                  <Link to="/men" className="link">MEN</Link>
                 </li>
                 <li>
-                  <a href="#">KIDS</a>
+                  <Link to="/kids" className="link">KIDS</Link>
                 </li>
               </ul>
               <div className="div_middle_icon">

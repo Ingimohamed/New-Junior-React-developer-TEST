@@ -32,17 +32,17 @@ $blackColorText: #1D1F22;
             border-bottom: 2px solid $lightGreen;
             line-height: 42px;
         }
-      a.active > li{
+      .link.active > li{
             border-bottom: 2px solid $lightGreen;
         }
 
-        a{
+        .link{
             color: $blackColorText;
             text-decoration: none;
             font-size: 14px;
             line-height: 19.2px;
         }
-        a:hover{
+        .link:hover{
             color:$lightGreen;
         }
         
