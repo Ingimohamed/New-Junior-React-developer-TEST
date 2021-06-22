@@ -3,26 +3,21 @@ import Navbar from './navbar/Navbar';
 import configureStore from '../store/configureStore';
 import ClothesItems from './items/ClothesItems';
 import { Provider } from 'react-redux';
-import LinkList from './LinkList';
-import CreateLink from './CreateLink';
-import Header from './Header';
+
+
 import { Switch, Route } from 'react-router-dom';
-import Login from './Login';
+
 
 const store = configureStore();
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="center w85">
+      <div>
         <Navbar />
-        <Header />
-        <div className="ph3 pv1 background-gray">
+        <div>
           <Switch>
             <Route exact path="/items" component={ClothesItems} />
-            <Route exact path="/" component={LinkList} />
-            <Route exact path="/create" component={CreateLink} />
-            <Route exact path="/login" component={Login} />
           </Switch>
         </div>
       </div>
