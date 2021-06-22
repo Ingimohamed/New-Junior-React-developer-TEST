@@ -7,6 +7,7 @@ import LinkList from './LinkList';
 import CreateLink from './CreateLink';
 import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
+import Login from './Login';
 
 const store = configureStore();
 
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/items" component={ClothesItems} />
             <Route exact path="/" component={LinkList} />
             <Route exact path="/create" component={CreateLink} />
+            <Route exact path="/login" component={Login} />
           </Switch>
         </div>
       </div>
