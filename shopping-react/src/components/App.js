@@ -1,11 +1,12 @@
 import '../styles/App.scss';
 import Navbar from './navbar/Navbar';
 import configureStore from '../store/configureStore';
-import ClothesItems from './items/ClothesItems';
 import { Provider } from 'react-redux';
-
-
 import { Switch, Route } from 'react-router-dom';
+import Currencies from './items/Currencies';
+import ItemsList from './items/ItemsList';
+import Products from './items/Products';
+
 
 
 const store = configureStore();
@@ -15,9 +16,12 @@ function App() {
     <Provider store={store}>
       <div>
         <Navbar />
+        <Currencies />
+        <ItemsList />
+        <Products />
         <div>
           <Switch>
-            <Route exact path="/items" component={ClothesItems} />
+           
           </Switch>
         </div>
       </div>
