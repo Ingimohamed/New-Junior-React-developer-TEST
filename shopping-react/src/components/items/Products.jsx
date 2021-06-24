@@ -31,11 +31,6 @@ export default function Products() {
                 <figcaption key={product.name} className="item_name">
                   {product.name}
                         </figcaption>
-                  {data.category.products.prices.map((price) => (
-                        <figcaption key={price.amount} className="item_price">
-                        {price.amount}
-                        </figcaption>
-                     ))}
               </div>
             </div>
           </div>
