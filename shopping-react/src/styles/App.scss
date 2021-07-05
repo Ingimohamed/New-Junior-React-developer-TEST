@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
 
 $lightGreen: #5ECE7B;
 $overlayColor:  #39374838;
 $blackColorText: #1D1F22;
 $Releway: 'Raleway', sans-serif;
+$SourceSansPro:  'Source Sans Pro', sans-serif;
+$RobotoCondensed: 'Roboto Condensed', sans-serif;
 
 #navbar{
     padding-left: 4rem;
@@ -164,5 +170,108 @@ color: $blackColorText;
 }
 }
 
+
+//pdp page
+.container_pdp{
+    .pdp_grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 10px;
+        padding: 3rem 2rem;
+        .col_one{
+            .image_gallery{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .col_two{
+            padding: 0rem 5rem;
+            .add_to_card{
+                background: $lightGreen;
+                color:white;
+                font-family: $Releway;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19.2px;
+                text-align: center;
+                width: 292px;
+                height: 52px;
+                padding: 16px 32px;
+                border:none;
+            }
+            .size_section{
+                display:grid;
+                grid-template-columns: 63px 63px 63px 63px;
+                column-gap: 15px;
+                .btn_size{
+                   
+                    width: 63px;
+                    height: 45px;
+                   
+                    border: 1px solid $blackColorText;
+                    font-family: $SourceSansPro;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 18px;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: $blackColorText; 
+                    background-color: white;
+                   
+                }
+                .btn_size:disabled{
+                    border:1px solid #A6A6A6;
+                    color:#A6A6A6;
+                }
+            }
+            .product_title{
+                color: $blackColorText;
+                font-family: $Releway;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 27px;
+            }
+            .product_name{
+                color:$blackColorText;
+                font-family: $Releway;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 27px;
+            }
+            .sizes_text{
+                font-family: $RobotoCondensed;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 18px;
+                color:$blackColorText;
+            }
+            .prices_section{
+                .price_title{
+                    font-family: $RobotoCondensed;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color:$blackColorText;
+                }
+                .price_number{
+                    font-family: $Releway;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 18px;
+                    color:$blackColorText;
+                }
+            }
+        }
+    }
+
+
+    .out_section_grid{
+        display: grid;
+    }
+   
+}
 
 
