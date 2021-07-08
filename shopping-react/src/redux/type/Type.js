@@ -3,6 +3,7 @@ export const ActionsType = {
   Selected_Category: "Selected_Category",
   Selecte_Product: "Selecte_Product",
   AddToShoppingCart: "AddToShoppingCart",
-  RemoveToShoppingCart: "RemoveToShoppingCart",
+  RemoveFromShoppingCart: "RemoveFromShoppingCart",
   Choose_Currency: "Choose_Currency",
 };
+ 
