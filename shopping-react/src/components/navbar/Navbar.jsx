@@ -8,6 +8,13 @@ import { NavLink } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
+    function openNav() {
+      document.getElementById("currencies").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("currencies").style.width = "0%";
+    }
     return (
       <div id="navbar">
         <nav>
@@ -31,13 +38,15 @@ class Navbar extends Component {
             <img src={navIcon} alt="icon" />
           </div>
           <ul className="ul_navbar2">
-            <li className="price_cart dollar_sign">
-              $ <img src={vector} alt="" />
+            <li className="price_cart dollar_sign" id="currencies">
+              <Link>
+              $
+              </Link>
             </li>
 
             <li className="price_cart">
               <Link
-                to="/cartpage"
+                to="#"
                 className="nav-link  dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
@@ -46,8 +55,7 @@ class Navbar extends Component {
 
               <ul className="card_dropdown hide">
                 <li>
-                  {" "}
-                  <CartMenu />{" "}
+                  <CartMenu />
                 </li>
               </ul>
             </li>

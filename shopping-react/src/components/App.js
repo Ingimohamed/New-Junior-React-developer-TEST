@@ -5,6 +5,7 @@
   import Clothes from "./categories/Clothes";
   import PdpPage from "./PDP/PdpPage";
   import { BrowserRouter } from "react-router-dom";
+  import Cart from "./cart/cart";
 
   // 1
   import {
@@ -35,6 +36,7 @@
                 <Route exact path="/" component={Tech} />
                 <Route exact path="/clothes" component={Clothes} />
                 <Route exact path="/pdp" component={PdpPage} />
+                <Route exact path="/cart" component={Cart} />
               </Switch>
             </div>
           </div>
